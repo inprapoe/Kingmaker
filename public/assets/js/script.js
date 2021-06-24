@@ -21,11 +21,6 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        for(j = 0; j < acc.length; j++) {
-            acc[j].nextElementSibling.style.maxHeight = null;
-            acc[j].classList.remove("accordionActive");
-            acc[j].parentElement.classList.remove("border-b")
-        }
         this.classList.toggle("accordionActive");
         this.parentElement.classList.toggle("border-b")
         var panel = this.nextElementSibling;
@@ -34,5 +29,6 @@ for (i = 0; i < acc.length; i++) {
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         } 
+        this.children[1].classList.toggle('-rotate-180')
     });
 }

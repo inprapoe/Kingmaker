@@ -96,6 +96,10 @@ label {
     @apply btn border-km-gold hover:border-km-gold-darker hover:bg-km-gold-darker bg-km-gold text-white;
 }
 
+.btn-primary-green {
+    @apply btn border-km-green hover:border-km-green-darker hover:bg-km-green-darker bg-km-green text-white;
+}
+
 .btn-secondary-white {
     @apply btn border-white hover:border-km-gold hover:bg-km-gold text-white;
 }
@@ -172,10 +176,9 @@ label {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 24px;
   transition: 0.3s;
   font-family: 'Rokkitt', serif;
-  @apply p-5 bg-white font-bold text-km-green link-text-gold;
+  @apply p-5 bg-white font-bold text-xl md:text-2xl text-km-green link-text-gold w-full flex items-center;
 }
 
 .accordionActive, .accordion:hover {
