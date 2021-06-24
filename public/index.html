@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGMAKER</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="landing-nav">
+       <div class="flex flex-col items-center md:flex-row responsive">
+            <div class="z-20 flex items-center justify-between w-full md:w-auto">
+                <img class="w-10 h-10" src="./assets/img/icons/gold-green.svg" alt="">
+                <span class="text-2xl link-text-gold md:hidden" onclick="toggleNav()">&#9776;</span>
+            </div>
+            <div id="myNav" class="">
+                <div class="flex flex-col w-full p-5 space-y-10 md:space-y-0 md:p-0 md:flex-row md:justify-between">
+                    <ul class="flex flex-col items-center space-y-5 font-semibold md:flex-row md:space-y-0 md:space-x-6 md:text-sm">
+                        <li><a href="#" class="link-text-gold">HOME</a></li>
+                        <li><a href="#" class="link-text-gold">ABOUT</a></li>
+                        <li><a href="#" class="link-text-gold">SESSIONS</a></li>
+                    </ul>
+                    <ul class="flex flex-col items-center space-y-4 text-sm md:flex-row justify-c md:space-y-0enter md:space-y-0 md:space-x-4">
+                        <li><a href="#" id="navLogIn" class="w-40 btn-secondary-white md:w-auto">LOGIN</a></li>
+                        <li><a href="#" class="w-40 btn-primary-gold md:w-auto">REGISTER NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <!-- HERO SECTION -->
+    <section class="text-white hero-section bg-km-green">
+        <div class="flex flex-col-reverse items-center responsive lg:flex-row lg:justify-between">
+            <div class="flex flex-col items-center mt-12 text-center lg:w-5/12 lg:text-left lg:mt-0 lg:mr-10 lg:items-start">
+                <h1 class="mb-3 text-white">Lorem ipsum dolor sit amet</h1>
+                <p class="mb-8 leading-relaxed text-white opacity-90 lg:mb-12">Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst. Ut venenatis ante non magna volutpat lacinia. Morbi vulputate quam nec lacus interdum volutpat at eget enim. Aenean vitae dui massa. </p>
+                <button class="text-sm btn-primary-gold">REGISTER NOW</button>
+            </div>
+            <img class="w-8/12 lg:w-6/12 xl:w-5/12" src="./assets/img/icons/fordark.svg" alt="">
+        </div>
+    </section>
+    <!-- END HERO SECTION -->
+
+    <!-- ABOUT -->
+    <section class="">
+        <div class="flex flex-col items-center responsive lg:flex-row lg:justify-between">
+            <img class="w-6/12 lg:w-6/12 xl:w-5/12" src="./assets/img/icons/forlight.svg" alt="">
+            <div class="flex flex-col items-center mt-12 text-center lg:w-5/12 lg:text-left lg:mt-0 lg:ml-10 lg:items-start">
+                <h4 class="mb-2">About</h4>
+                <h2 class="mb-3">Lorem ipsum dolor sit amet</h2>
+                <div class="flex flex-col space-y-2 leading-relaxed text-km-gray-333">
+                    <p>Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst. Ut venenatis ante non magna volutpat lacinia. Morbi vulputate quam nec lacus interdum volutpat at eget enim. Aenean vitae dui massa. </p>
+                    <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. Mauris libero elit, scelerisque nec mauris eu, laoreet aliquam dui. Maecenas ultricies quis sem non porta. Etiam pharetra justo risus, sit amet imperdiet quam tempus eu.</p>
+                </div>
+            </div>   
+        </div>    
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- WHY -->
+    <section class="light-bg">
+       <div class="flex flex-col items-center responsive">
+            <div class="flex flex-col items-center max-w-lg mb-20 text-center">
+                <h2 class="mb-3">Why Kingmaker</h2>
+                <p>Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst</p>  
+            </div>
+            <ul class="grid gap-y-10 place-items-center md:grid-cols-3">
+                <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                    <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                    <h3 class="mb-2 text-2xl md:text-3xl">Lorem Ipsum</h3>
+                    <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                </li>
+                <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                    <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                    <h3 class="mb-2 text-2xl md:text-3xl">Lorem Ipsum</h3>
+                    <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                </li>
+                <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                    <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                    <h3 class="mb-2 text-2xl md:text-3xl">Lorem Ipsum</h3>
+                    <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                </li>
+            </ul>
+       </div>
+    </section>
+    <!-- END WHY -->
+
+    <!-- SESSIONS -->
+    <section class="">
+        <div class="flex flex-col items-center responsive">
+             <div class="flex flex-col items-center max-w-lg mb-10 text-center md:mb-20">
+                 <h2 class="mb-3">Kingmaker Sessions</h2>
+             </div>
+             <ul class="grid w-full lg:w-auto gap-x-8 gap-y-10 place-items-center lg:grid-cols-3">
+                 <li class="session-card">
+                    <div class="session-card-img-container">
+                        <img class="" src="./assets/img/sessions/Rectangle 11.png" alt="">
+                    </div>
+                    <div class="w-full p-5 bg-white">
+                        <p class="mb-1 text-sm">Category</p>
+                        <h3 class="mb-2 text-2xl lc-2l">Lorem ipsum dolor sit amet sdljns bsodvnwsd oldnvsadc</h3>
+                        <p class="mb-2 text-sm lc-3l text-km-gray-666">Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus enim mattis</p>
+                        <div class="flex flex-col mb-2 space-y-1 text-sm ">
+                            <p><span class="w-16 font-semibold">Speaker</span> : Mr.X</p>
+                            <p><span class="w-16 font-semibold">Date</span> : 10 July 2021</p>
+                            <p><span class="w-16 font-semibold">Time</span> : 19.00 - 22.00 WIB</p>
+                        </div>
+                        <h4 class="text-lg font-semibold text-km-gold">IDR XXX.XXX</h4>                        
+                    </div>
+                 </li>
+                 <li class="session-card">
+                    <div class="session-card-img-container">
+                        <img class="" src="./assets/img/sessions/Rectangle 11.png" alt="">
+                    </div>
+                    <div class="w-full p-5 bg-white">
+                        <p class="mb-1 text-sm">Category</p>
+                        <h3 class="mb-2 text-2xl lc-2l">Lorem ipsum dolor sit amet sdljns bsodvnwsd oldnvsadc</h3>
+                        <p class="mb-2 text-sm lc-3l text-km-gray-666">Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus enim mattis</p>
+                        <div class="flex flex-col mb-2 space-y-1 text-sm ">
+                            <p><span class="w-16 font-semibold">Speaker</span> : Mr.X</p>
+                            <p><span class="w-16 font-semibold">Date</span> : 10 July 2021</p>
+                            <p><span class="w-16 font-semibold">Time</span> : 19.00 - 22.00 WIB</p>
+                        </div>
+                        <h4 class="text-lg font-semibold text-km-gold">IDR XXX.XXX</h4>                        
+                    </div>
+                 </li>
+                 <li class="session-card">
+                    <div class="session-card-img-container">
+                        <img class="" src="./assets/img/sessions/Rectangle 11.png" alt="">
+                    </div>
+                    <div class="w-full p-5 bg-white">
+                        <p class="mb-1 text-sm">Category</p>
+                        <h3 class="mb-2 text-2xl lc-2l">Lorem ipsum dolor sit amet sdljns bsodvnwsd oldnvsadc</h3>
+                        <p class="mb-2 text-sm lc-3l text-km-gray-666">Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus enim mattis</p>
+                        <div class="flex flex-col mb-2 space-y-1 text-sm ">
+                            <p><span class="w-16 font-semibold">Speaker</span> : Mr.X</p>
+                            <p><span class="w-16 font-semibold">Date</span> : 10 July 2021</p>
+                            <p><span class="w-16 font-semibold">Time</span> : 19.00 - 22.00 WIB</p>
+                        </div>
+                        <h4 class="text-lg font-semibold text-km-gold">IDR XXX.XXX</h4>                        
+                    </div>
+                 </li>
+             </ul>
+        </div>
+     </section>
+    <!-- END SESSION -->
+
+
+    <!-- HOW TO JOIN -->
+    <section class="light-bg">
+        <div class="flex flex-col items-center responsive">
+             <div class="flex flex-col items-center max-w-lg mb-20 text-center">
+                 <h2 class="mb-3">How to Join kingmaker</h2>
+                 <p>Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst</p>  
+             </div>
+             <ul class="grid gap-y-10 place-items-center md:grid-cols-3">
+                 <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                     <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                     <h3 class="mb-2 text-2xl md:text-3xl">1. Lorem Ipsum</h3>
+                     <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                 </li>
+                 <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                     <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                     <h3 class="mb-2 text-2xl md:text-3xl">2. Lorem Ipsum</h3>
+                     <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                 </li>
+                 <li class="flex flex-col items-center w-10/12 max-w-xs text-center">
+                     <img class="mb-4" src="./assets/img/icons/shield.svg" alt="">
+                     <h3 class="mb-2 text-2xl md:text-3xl">3. Lorem Ipsum</h3>
+                     <p>Nullam varius elit et enim mattis, eu facilisis arcu maximus. Cras in lectus orci. </p>
+                 </li>
+             </ul>
+        </div>
+     </section>
+    <!-- END HOW TO JOIN -->
+
+    <!-- FAQ -->
+    <section>
+        <div class="responsive">
+            <h2 class="mb-10 text-center">Frequently Asked Question</h2>
+            <ul>
+                <li class="overflow-hidden border-b rounded-lg light-bg">
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipisicing elit? <span><i class="text-sm fas fa-chevron-right"></i></span></button>
+                    <div class="panel">
+                        <div class="p-5 border-t">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="overflow-hidden border-b rounded-lg light-bg">
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipisicing elit? <span><i class="text-sm fas fa-chevron-right"></i></span></button>
+                    <div class="panel">
+                        <div class="p-5 border-t">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>       
+    </section>
+    <!-- END FAQ -->
+
+    <!-- JUMBOTRON -->
+    <section>
+        <h2>What are You Waiting For?</h2>
+        <button>REGISTER NOW</button>
+    </section>
+    <!-- END JUMBOTRON -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div class="">
+                <img src="./assets/img/icons/fordark.svg" alt="">
+                <p>Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst</p>
+            </div>
+            <div>
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#" class="link-text-gold">Nullam varius</a></li>
+                    <li><a href="#" class="link-text-gold">Non magna</a></li>
+                    <li><a href="#" class="link-text-gold">Morbi vulputate</a></li>
+                    <li><a href="#" class="link-text-gold">Morbi vulputate</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ipsum</h3>
+                <ul>
+                    <li><a href="#" class="link-text-gold">Nullam varius</a></li>
+                    <li><a href="#" class="link-text-gold">Non magna</a></li>
+                    <li><a href="#" class="link-text-gold">Morbi vulputate</a></li>
+                    <li><a href="#" class="link-text-gold">Morbi vulputate</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li ><a href="#" class="link-text-gold">help@kingmakeracademy.com</a></li>
+                <li><a href="#" class="link-text-gold">(022) XXXXXXX</a></li>
+                <li>
+                    <a href="#">
+                        Jalan Lorem Ipsum No. <br>
+                        Bandung, Jawa Barat
+                    </a>
+                </li>
+                <li><a href="#" class="link-text-gold">Morbi vulputate</a></li>
+            </ul>
+        </div>
+        <h4>© 2021 Kingmaker Academy</h4>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
