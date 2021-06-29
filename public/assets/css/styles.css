@@ -777,3 +777,25 @@ label {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
+
+/* USER PAGE */
+
+.user-banner {
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+}
+
+.user-banner img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center
+}

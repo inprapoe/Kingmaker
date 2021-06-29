@@ -270,3 +270,13 @@ label {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+/* USER PAGE */
+.user-banner {
+    @apply w-full relative;
+    padding-top: 40%;
+}
+
+.user-banner img {
+    @apply absolute inset-0 w-full h-full object-cover object-center
+}
