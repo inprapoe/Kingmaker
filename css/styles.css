@@ -122,18 +122,31 @@ label {
 
 /* NAVIGATION */ 
 .landing-nav {
-    @apply lg:h-20 py-5 grid place-items-center w-full fixed top-0 left-0 right-0 z-40 transition duration-300 bg-km-green text-white;
+    @apply lg:h-20 py-5 grid place-items-center w-full fixed top-0 left-0 right-0 z-40 transition duration-300 ;
 }
 
-.scrl-nav {
-    @apply bg-white text-km-gray-333 shadow-lg;
+.dark-nav {
+    @apply bg-km-green text-white;
 }
+
+.scrl-nav, .light-nav {
+    @apply  bg-white text-km-gray-333 shadow-lg;
+}
+
 
 #myNav {
     height: 0;
     overflow-y: hidden;
-    z-index: 1;
-    @apply flex flex-col items-center justify-center relative md:ml-6 lg:justify-between w-full md:h-full;
+    z-index: 20;
+    @apply flex flex-col items-center justify-center relative md:ml-6 md:overflow-y-visible lg:justify-between w-full md:h-full;
+}
+
+#userNav {
+    @apply flex  md:absolute right-0 z-50 md:hidden flex-col md:float-right md:w-48 md:py-3 md:px-5 items-center md:items-start font-semibold md:text-sm bg-white md:border rounded-md md:shadow-lg top-12;
+}
+
+#navOverlay {
+    @apply fixed z-10 w-full h-screen hidden inset-0;
 }
 /* END NAVBAR */
 
