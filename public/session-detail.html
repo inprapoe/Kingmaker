@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGMAKER</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="landing-nav light-nav">
+        <div class="flex flex-col items-center md:flex-row responsive">
+            <div class="z-20 flex items-center justify-between w-full md:w-auto">
+                <img class="w-10 h-10" src="./assets/img/icons/gold-green.svg" alt="">
+                <span class="text-2xl link-text-gold md:hidden" onclick="toggleNav()">&#9776;</span>
+            </div>
+            <div id="myNav" class="">
+                <div class="relative flex flex-col-reverse w-full p-5 md:p-0 md:flex-row md:justify-between">
+                <div id="userNav" class="">
+                    <h4 class="mb-4 text-2xl font-bold font-rokkit text-km-green md:hidden">Settings</h4>
+                    <ul class="flex flex-col items-center space-y-3 md:items-start ">
+                        <li class="link-text-gold "><a href="#"><i class="w-5 text-gray-400 fas fa-cog"></i>SETTING </a></li>
+                        <li class="link-text-gold "><a href="#"><i class="w-5 text-gray-400 fas fa-user"></i>VIEW PROFILE </a></li>
+                        <div class="w-full h-px bg-gray-200"></div>
+                        <li class="link-text-gold "><a href="#"><i class="w-5 text-gray-400 fas fa-sign-out-alt"></i>LOG OUT </a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:flex-row">
+                    <h4 class="mb-4 text-2xl font-bold font-rokkit text-km-green md:hidden">Navigation</h4>
+                    <ul class="flex flex-col items-center mb-10 space-y-5 font-semibold md:flex-row md:space-y-0 md:space-x-6 md:text-sm md:mb-0">
+                        <li><a href="#" class="link-text-gold">HOME</a></li>
+                        <li><a href="#" class="link-text-gold">ABOUT</a></li>
+                        <li><a href="#" class="link-text-gold">SESSIONS</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center justify-center mb-10 space-y-4 text-sm md:mb-0 md:flex-row md:space-y-0 ">
+                    <div onclick="openUserNav()" class="relative flex flex-col items-center space-y-2 transition duration-300 rounded-full cursor-pointer md:pr-4 md:space-y-0 md:flex-row md:space-x-2 md:hover:bg-gray-200">
+                        <span class="relative grid w-10 h-10 overflow-hidden rounded-full bg-km-gold place-items-center">
+                            <!-- <img class="object-cover object-center w-full h-full" src="./assets/img/icons/gold-green.svg" alt=""> Pake ini kalo dah login-->
+                            <span class="text-lg font-semibold text-white">JD</span>
+                        </span> 
+                        <span class="text-base font-semibold md:text-sm">John Doe</span>
+                    </div>                      
+                </div>  
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="navOverlay" onclick="closeNav()"></div>
+
+    <main class="grid py-20 place-items-center ">
+        <div class="relative flex items-center w-full">
+            <div class="user-banner ">
+                <img src="./assets/img/banner/calendar.jpg" alt="">
+            </div>
+            <div class="absolute inset-0 flex items-center bg-black bg-opacity-30 ">
+                <div class="responsive">
+                    <div class="flex flex-col items-center text-center lg:w-5/12 lg:text-left lg:mt-0 lg:mr-10 lg:items-start ">
+                        <h1 class="mb-3 text-white">Lorem ipsum dolor sit amet</h1>
+                        <p class="leading-relaxed text-white opacity-90 lg:mb-12">Cras pharetra lacus quis tellus rutrum pharetra.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class=" responsive">
+            <div class="grid items-center w-full grid-cols-2 gap-5 py-5 border-b lg:gap-x-10 sm:grid-cols-12 sm:py-10">
+                <div class="flex flex-col space-y-3 text-sm sm:col-span-3">
+                    <p class=""><span class="mr-1 text-km-gold"><i class="fas fa-user"></i></span> Mr.X</p>
+                    <p class=""><span class="mr-1 text-km-gold"><i class="far fa-calendar-alt"></i></span> 10 July 2021</p>
+                    <p class=""><span class="mr-1 text-km-gold"><i class="far fa-clock"></i></span>19.00 - 22.00 WIB</p>
+                </div>
+                <div class="text-sm sm:col-span-3">
+                    <h4 class="mb-2">Price</h4>
+                    <div class="flex flex-col">
+                        <h5 class="text-xs text-gray-400 line-through">IDR XXX.XXX</h5>    
+                        <h4 class="text-lg font-semibold text-km-gold">IDR XXX.XXX</h4>    
+                        <h4 class="text-xs text-km-gold">*Early Bird Price</h4>    
+                    </div>
+                </div>
+                <div class="w-full col-span-2 sm:col-start-9 sm:col-span-4 lg:col-start-10 lg:col-span-3">
+                    <a href="#" class="btn-primary-gold">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="w-full">
+            <div class="grid items-center gap-y-10 responsive gap-x-10 lg:grid-cols-12 lg:items-start">
+                <div class="flex flex-col w-full lg:col-span-8 ">
+                    <div class="flex flex-col items-start max-w-lg mb-5 text-center">
+                        <h2 class="">Session Overview</h2>
+                    </div>
+                    <p class="leading-relaxed text-km-gray-666">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis ligula, iaculis imperdiet elit id, pellentesque fringilla nibh. Sed dictum porta rhoncus. Donec ut ultricies turpis. Donec ut arcu id lacus accumsan feugiat et non est. Aenean ullamcorper eu ex eget sollicitudin. Sed varius ante eu est laoreet sodales. Donec lacinia dignissim efficitur. In quis elit in lorem pharetra gravida. Suspendisse sed ex ut purus fringilla euismod. Fusce suscipit lectus ac orci finibus, eu dictum mauris accumsan. Vivamus id metus enim. Aenean facilisis cursus rutrum. Nullam viverra est in tortor aliquet elementum. Phasellus rhoncus fermentum lacus id vulputate. Aenean viverra vel risus faucibus consequat.</p>
+                </div>
+                <div class="flex flex-col w-full col-span-2 space-y-3 sm:col-start-9 sm:col-span-4 lg:col-start-10 lg:col-span-3">
+                    <div class="flex-shrink-0 w-32 h-32 ">
+                        <img class="object-cover object-center w-full h-full" src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col ">
+                        <div class="flex-col mb-3">
+                            <h4 class="text-lg font-semibold">Mr. X</h4>
+                            <p class="text-xs">Entrepreneur</p>
+                        </div>
+                        <p class="text-sm text-km-gray-666">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis ligula, iaculis imperdiet elit id, pellentesque fringilla nibh.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+    </main>
+
+     <!-- FOOTER -->
+    <footer class="text-white bg-km-green ">
+        <div class="grid gap-8 py-10 text-center lg:py-20 responsive md:grid-cols-2 md:text-left lg:flex lg:items-center">
+            <div class="max-w-xs mx-auto lg:flex-shrink-0 md:max-w-none md:mx-0 lg:w-1/3">
+                <img class="w-24 mx-auto mb-4 md:mx-0 lg:w-40" src="./assets/img/icons/fordark.svg" alt="">
+                <p class="text-sm opacity-90">Cras pharetra lacus quis tellus rutrum pharetra. In hac habitasse platea dictumst</p>
+            </div>
+            <div class="lg:w-1/6 lg:ml-5">
+                <h3 class="mb-5 text-2xl text-white lg:mb-8">Lorem</h3>
+                <ul class="flex flex-col space-y-3 text-sm lg:space-y-5">
+                    <li><a href="#" class="link-text-gold opacity-90">Nullam varius</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Non magna</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Morbi vulputate</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Morbi vulputate</a></li>
+                </ul>
+            </div>
+            <div class="lg:w-1/6 lg:ml-5">
+                <h3 class="mb-5 text-2xl text-white lg:mb-8">Ipsum</h3>
+                <ul class="flex flex-col space-y-3 text-sm lg:space-y-5">
+                    <li><a href="#" class="link-text-gold opacity-90">Nullam varius</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Non magna</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Morbi vulputate</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">Morbi vulputate</a></li>
+                </ul>
+            </div>
+            <div class="lg:w-1/6 lg:ml-5">
+                <h3 class="mb-5 text-2xl text-white lg:mb-8">Contact</h3>
+                <ul class="flex flex-col space-y-3 text-sm lg:space-y-5">
+                    <li ><a href="#" class="link-text-gold opacity-90">help@kingmakeracademy.com</a></li>
+                    <li><a href="#" class="link-text-gold opacity-90">(022) XXXXXXX</a></li>
+                    <li>
+                        <a href="#" class="link-text-gold opacity-90">
+                            Jalan Lorem Ipsum No. <br>
+                            Bandung, Jawa Barat
+                        </a>
+                    </li>
+                    <li><a href="#" class="link-text-gold opacity-90">Morbi vulputate</a></li>
+                </ul>
+            </div>
+           
+        </div>
+        <h4 class="py-4 text-center font-rokkit">© 2021 <b>Kingmaker Academy</b></h4>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

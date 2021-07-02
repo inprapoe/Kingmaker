@@ -6,7 +6,7 @@ body {
 }
 
 section {
-    @apply py-20 md:py-28;
+    @apply py-10  md:py-20 lg:py-28;
 }
 
 h1, h2, h3 {
@@ -274,9 +274,16 @@ label {
 /* USER PAGE */
 .user-banner {
     @apply w-full relative;
-    padding-top: 40%;
+    padding-top: 120%;
 }
 
 .user-banner img {
-    @apply absolute inset-0 w-full h-full object-cover object-center
+    @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+@screen md {
+    .user-banner {
+        @apply w-full relative;
+        padding-top: 40%;
+    }
 }

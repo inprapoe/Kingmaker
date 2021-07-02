@@ -7,11 +7,18 @@ body {
 }
 
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 @media (min-width: 768px){
+  section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px){
   section{
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -783,7 +790,7 @@ label {
 .user-banner {
   position: relative;
   width: 100%;
-  padding-top: 40%;
+  padding-top: 120%;
 }
 
 .user-banner img {
@@ -797,5 +804,13 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
-     object-position: center
+     object-position: center;
+}
+
+@media (min-width: 768px) {
+  .user-banner {
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
+  }
 }
